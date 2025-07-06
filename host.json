@@ -7,5 +7,16 @@
         "excludedTypes": "Request"
       }
     }
+  },
+  "extensions": {
+    "http": {
+      "routePrefix": "api"
+    }
+  },
+  "cors": {
+    "allowedOrigins": ["*"],
+    "allowedMethods": ["POST", "OPTIONS"],
+    "allowedHeaders": ["Content-Type", "Accept", "Origin", "X-Requested-With"],
+    "maxAge": 3600
   }
 }
